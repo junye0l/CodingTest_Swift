@@ -43,3 +43,23 @@
       </table>
 
 > 출처: 프로그래머스 코딩 테스트 연습, https://school.programmers.co.kr/learn/challenges
+
+<br>
+<br>
+
+<code>
+func solution(_ n:Int64) -> Int64 {
+    
+    var x = String(String(n).sorted(by: >))
+    return Int64(x)!
+
+}
+</code>
+
+<div> sorted(by: >)를 활용해 내림차순의 배열에 담아준다. </div>
+<div>sort : 원래의 배열을 오름차순 정렬 </div>
+<div>sorted : 새로운 배열에 오름차순 정렬 </div>
+<div>(by: >) : 내림차순 정렬 </div> 
+<br>
+<div> 정수를 문자 단위로 나눈후 내림차순의 배열에 담아준다 그 후 다시 문자열로 변환해 변수에 담아주고</div>
+<div> Int64형으로 타입 변환후 return 해준다.</div>
