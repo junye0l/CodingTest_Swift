@@ -4,8 +4,9 @@ var counts: Int = Int(readLine()!)!
 var words: [String] = []
 
 for i in 0..<counts {
-    var wds: String = readLine()!
-    words.append(wds)
+
+    words.append(readLine()!)
+      
 }
 
 words = Array(Set(words))
